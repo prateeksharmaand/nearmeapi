@@ -3,7 +3,7 @@ const cors = require('cors');
 const express = require('express');
 const mongoose = require('mongoose');
 const compression = require('compression')
-const mongoString = process.env.DATABASE_URL;
+const mongoString ="mongodb+srv://prateek:V9z1ntUKFeosJLK5@cluster0.aiuci.mongodb.net/nearme?retryWrites=true&w=majority";
 
 mongoose.connect(mongoString,{ poolSize: 10 });
 const database = mongoose.connection;

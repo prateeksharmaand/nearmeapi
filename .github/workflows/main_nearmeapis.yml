@@ -32,6 +32,7 @@ jobs:
         with:
           name: node-app
           path: release.zip
+		  
 
   deploy:
     runs-on: ubuntu-latest
@@ -56,3 +57,7 @@ jobs:
 
           publish-profile: ${{ secrets.AzureAppService_PublishProfile_3c1594c8bc7f4325a8fc6677063e6750 }}
           package: release.zip
+		  
+		  
+		  
+		 
